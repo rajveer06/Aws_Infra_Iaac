@@ -3,6 +3,7 @@ terraform {
     bucket         = "terraform-state-myproject-20250415"
     key            = "terraform/terraform.tfstate"
     encrypt        = true
+    region         = "us-west-2"
   }
 }
 
@@ -17,4 +18,9 @@ module "ec2_instance" {
 module "tf_state" {
     source = "./modules/s3"
     bucket_name = var.bucket_name
+}
+
+module "tf_state_1" {
+    source = "./modules/s3"
+    bucket_name = var.bucket_name_1
 }
