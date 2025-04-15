@@ -1,0 +1,5 @@
+ami            = "ami-0c55b159cbfafe1f0"
+instance_type  = "t2.micro"
+subnet_id      = "subnet-12345678"
+key_name       = "GitHub-EC2-Key"
+instance_name  = "GitHub-EC2"
