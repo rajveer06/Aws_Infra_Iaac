@@ -1,3 +1,11 @@
+terraform {
+  backend "s3" {
+    bucket         = var.bucket_name
+    key            = "terraform/terraform.tfstate"
+    encrypt        = true
+  }
+}
+
 module "ec2_instance" {
   source        = "./modules/ec2"
   ami           = var.ami
