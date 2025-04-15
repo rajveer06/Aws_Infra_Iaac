@@ -1,6 +1,5 @@
-ami            = "ami-0c55b159cbfafe1f0"
+ami            = "ami-00a929b66ed6e0de6" # Amazon Linux 2 AMI (HVM) 
 instance_type  = "t2.micro"
-subnet_id      = "subnet-12345678"
 key_name       = "GitHub-EC2-Key"
 instance_name  = "GitHub-EC2"
 bucket_name = "my-terraform-state-bucket"

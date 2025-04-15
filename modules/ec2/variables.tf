@@ -9,11 +9,6 @@ variable "instance_type" {
   default     = "t2.micro"
 }
 
-variable "subnet_id" {
-  description = "Subnet ID to launch the instance in"
-  type        = string
-}
-
 variable "key_name" {
   description = "Key pair name for SSH access"
   type        = string
