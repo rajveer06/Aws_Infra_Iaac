@@ -1,6 +1,5 @@
 terraform {
   backend "s3" {
-    source = "./modules/s3"
     bucket         = "terraform-state-myproject-20250415"
     key            = "terraform/terraform.tfstate"
     encrypt        = true
