@@ -20,7 +20,6 @@ module "tf_state" {
     bucket_name = var.bucket_name
 }
 
-module "tf_state_1" {
-    source = "./modules/s3"
-    bucket_name = var.bucket_name_1
+resource "aws_s3_bucket" "tf_state_1" {
+  bucket = "terraform-state-myproject-20250415"
 }

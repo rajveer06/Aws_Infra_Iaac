@@ -3,7 +3,3 @@ variable "bucket_name" {
   type        = string
 }
 
-variable "bucket_name_1" {
-  description = "Name tag for the instance"
-  type        = string 
-}
